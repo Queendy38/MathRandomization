@@ -3,32 +3,48 @@
     </head>
     <body>
         <script>
-           //create array of adjective
-        var adjective = ["is nice",
-        "is kind",
-        "is bad",
-        "is good"
-];
+          //build an array of cooking method
+        var cooking = [
+            "slow cooked",
+            "BBQ",
+            "boiled",
+            "fried",
+            "baked",
+            "microwave",
+            "deep fried",
+            "steamed",
+        
 
 
-           //ask a person for his name
-         var name = prompt("Enter Name");
+        ];
 
+          //build an array of foods
+          var foods = [
+              "noodles",
+              "musibi",
+              "steak",
+              "porl",
+              "carrot",
+              "oreo",
+              "bacon",
+              "sphaghtetti",
+              "egg",
+              "ham",
+              "baby back rib",
+              "chicken",
+              "pizza",
+              "cake",
+              "fish",
+              "tomato",
+              "rice"
+          ];
 
+          //connect arrays together randomly
 
-           //generate a random number
-          var x = Math.floor(Math.random()*adjective.length);
+var x = Math.floor(Math.random()*cooking.length);
+var y = Math.floor(Math.random()*foods.length);
 
-
-
-           //let the user know what kind of person they are
-         window.alert(name + " " + adjective[x]);      
-
-
-           //username follow by the array
-
-
-
+window.alert(cooking[x] + " " + foods[y]);
  
 
             </script>
