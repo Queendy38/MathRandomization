@@ -4,6 +4,7 @@
     <body>
         <script>
           //build an array of cooking method
+          function cookingMethod(){
         var cooking = [
             "slow cooked",
             "BBQ",
@@ -36,7 +37,8 @@
               "cake",
               "fish",
               "tomato",
-              "rice"
+              "rice",
+              "Maggie Wong"
           ];
 
           //connect arrays together randomly
@@ -45,8 +47,9 @@ var x = Math.floor(Math.random()*cooking.length);
 var y = Math.floor(Math.random()*foods.length);
 
 window.alert(cooking[x] + " " + foods[y]);
- 
+ }
 
             </script>
+            <button onclick="cookingMethod()">Loading for Recipe</button>
     </body>
 </html>
